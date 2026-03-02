@@ -17,10 +17,14 @@ The core idea is to make medications understandable, schedules automatic, and ad
 | **Real-Time Caregiver Monitoring** | Family members and caregivers can remotely track medication adherence through a live dashboard and receive instant email alerts via Resend when a dose is missed or skipped. |
 | **Auto Dispenser Ready** | Designed to seamlessly connect with automated pill dispenser hardware via MQTT protocol, enabling the dispenser to automatically release the correct medication at the scheduled time based on the patient's active prescription. |
 
+#
+
 ## 👥 Team Members
 | - | Name | Reponsibility |
 |------|------|---------------|
 | ⚡️ | Chinnachart Waisoka | Team Leader, Project Manager and Full Stack Dev |
+
+#
 
 ## ⚙️ Tech Stack
 <h3>Design</h3>
@@ -40,18 +44,20 @@ The core idea is to make medications understandable, schedules automatic, and ad
 
 <h3>Backend & Database</h3>
 <p>
-  <img src="https://skillicons.dev/icons?i=supabase,postgres" />
+  <img src="https://skillicons.dev/icons?i=supabase" />
 </p>
 
 <h3>AI & Communication</h3>
 <p>
-  <img src="https://skillicons.dev/icons?i=gemini" />
-  <img src="https://avatars.githubusercontent.com/u/105098488?s=280&v=4" width="48" title="Resend" />
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9x1KPQxtiORiV5wo8km6sygu7msLPSS0GzQ&s" />
+  <img src="https://cdn.resend.com/brand/resend-icon-black.svg" width="48" title="Resend" />
 </p>
 
 <h3>Version Control</h3>
 <p>
   <img src="https://skillicons.dev/icons?i=git,github" />
 </p>
+
+#
 
 ## 💻 Design Architecture

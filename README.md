@@ -1,3 +1,5 @@
-# mia_pres
+# Medical Intelligence Assistant for Prescription Interpretation and Elderly Medication Support System
 
-A new Flutter project.
+## Instroduction
+
+# Member

@@ -17,14 +17,10 @@ The core idea is to make medications understandable, schedules automatic, and ad
 | **Real-Time Caregiver Monitoring** | Family members and caregivers can remotely track medication adherence through a live dashboard and receive instant email alerts via Resend when a dose is missed or skipped. |
 | **Auto Dispenser Ready** | Designed to seamlessly connect with automated pill dispenser hardware via MQTT protocol, enabling the dispenser to automatically release the correct medication at the scheduled time based on the patient's active prescription. |
 
-##
-
 ## 👥 Team Members
 | - | Name | Reponsibility |
 |------|------|---------------|
 | ⚡️ | Chinnachart Waisoka | Team Leader, Project Manager and Full Stack Dev |
-
-##
 
 ## ⚙️ Tech Stack
 
@@ -58,7 +54,5 @@ The core idea is to make medications understandable, schedules automatic, and ad
 <p>
   <img src="https://skillicons.dev/icons?i=git,github" />
 </p>
-
-##
 
 ## 💻 Design Architecture

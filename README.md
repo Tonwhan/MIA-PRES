@@ -17,16 +17,17 @@ The core idea is to make medications understandable, schedules automatic, and ad
 | **Real-Time Caregiver Monitoring** | Family members and caregivers can remotely track medication adherence through a live dashboard and receive instant email alerts via Resend when a dose is missed or skipped. |
 | **Auto Dispenser Ready** | Designed to seamlessly connect with automated pill dispenser hardware via MQTT protocol, enabling the dispenser to automatically release the correct medication at the scheduled time based on the patient's active prescription. |
 
-#
+##
 
 ## 👥 Team Members
 | - | Name | Reponsibility |
 |------|------|---------------|
 | ⚡️ | Chinnachart Waisoka | Team Leader, Project Manager and Full Stack Dev |
 
-#
+##
 
 ## ⚙️ Tech Stack
+
 <h3>Design</h3>
 <p>
   <img src="https://skillicons.dev/icons?i=figma" />
@@ -50,7 +51,7 @@ The core idea is to make medications understandable, schedules automatic, and ad
 <h3>AI & Communication</h3>
 <p>
   <img src="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/dark/gemini-color.png" width="48" height="48" />
-  <img src="https://media.licdn.com/dms/image/v2/D560BAQGrSd_Vs4ATbA/company-logo_200_200/B56ZqoDjj7JoAI-/0/1763756096084/resend_logo?e=2147483647&v=beta&t=CiyYckUDIthMnig8Rh4uiXKPTWx6xmC13kydj2T6k4g" width="48" height="48" />
+  <img src="https://media.licdn.com/dms/image/v2/D560BAQGrSd_Vs4ATbA/company-logo_200_200/B56ZqoDjj7JoAI-/0/1763756096084/resend_logo?e=2147483647&v=beta&t=CiyYckUDIthMnig8Rh4uiXKPTWx6xmC13kydj2T6k4g" width="48" height="48" style="border-radius: 10px" />
 </p>
 
 <h3>Version Control</h3>
@@ -58,6 +59,6 @@ The core idea is to make medications understandable, schedules automatic, and ad
   <img src="https://skillicons.dev/icons?i=git,github" />
 </p>
 
-#
+##
 
 ## 💻 Design Architecture

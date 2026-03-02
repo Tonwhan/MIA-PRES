@@ -1,4 +1,4 @@
-# Medical Intelligence Assistant for Prescription Interpretation and Elderly Medication Support System
+# MIA-PRES — AI-Powered Medication Management & Prescription Interpreter
 
 ## Project Introduction
 MIA-PRES is an AI-powered medication management application that helps patients of all ages understand their prescriptions, build medication habits, and never miss a dose — from the hospital queue to home.

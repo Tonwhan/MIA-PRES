@@ -56,3 +56,4 @@ The core idea is to make medications understandable, schedules automatic, and ad
 </p>
 
 ## 💻 Design Architecture
+![Tech_stack](assets/docs/image/MIA-PRES-Architecture.png)

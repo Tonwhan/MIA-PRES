@@ -49,8 +49,8 @@ The core idea is to make medications understandable, schedules automatic, and ad
 
 <h3>AI & Communication</h3>
 <p>
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9x1KPQxtiORiV5wo8km6sygu7msLPSS0GzQ&s" />
-  <img src="https://cdn.resend.com/brand/resend-icon-black.svg" width="48" title="Resend" />
+  <img src="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/dark/gemini-color.png" width="48" height="48" />
+  <img src="https://media.licdn.com/dms/image/v2/D560BAQGrSd_Vs4ATbA/company-logo_200_200/B56ZqoDjj7JoAI-/0/1763756096084/resend_logo?e=2147483647&v=beta&t=CiyYckUDIthMnig8Rh4uiXKPTWx6xmC13kydj2T6k4g" width="48" height="48" />
 </p>
 
 <h3>Version Control</h3>

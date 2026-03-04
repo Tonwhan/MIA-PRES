@@ -1,4 +1,4 @@
-# MIA-PRES — AI-Powered Medication Management & Prescription Interpreter
+# MIA-PRES Medical Intelligence Assistant for Prescription Interpretation and Medication Adherence Support System
 
 ## Project Introduction
 MIA-PRES is an AI-powered medication management application that helps patients of all ages understand their prescriptions, build medication habits, and never miss a dose — from the hospital queue to home.
@@ -20,7 +20,7 @@ The core idea is to make medications understandable, schedules automatic, and ad
 ## 👥 Team Members
 | - | Name | Reponsibility |
 |------|------|---------------|
-| ⚡️ | Chinnachart Waisoka | Team Leader, Project Manager and Full Stack Dev |
+| ⚡️ | Chinnachart Waisoka | Team Leader, Project Manager and Full Stack Software Dev |
 
 ## ⚙️ Tech Stack
 

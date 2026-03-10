@@ -20,7 +20,8 @@ The core idea is to make medications understandable, schedules automatic, and ad
 ## 👥 Team Members
 | - | Name | Reponsibility |
 |------|------|---------------|
-| ⚡️ | Chinnachart Waisoka | Team Leader, Project Manager and Full Stack Software Dev |
+| 💻 | Chinnachart Waisoka | Team Leader, Project Manager and Full Stack Software Dev |
+| 👀 | Pattheera laolam | Research, Documentation and Presentation |
 
 ## ⚙️ Tech Stack
 

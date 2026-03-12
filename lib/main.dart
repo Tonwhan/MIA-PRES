@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mia_pres/features/onboarding/presentation/welcome_screen.dart';
+import 'package:pillpal/features/onboarding/presentation/welcome_screen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 

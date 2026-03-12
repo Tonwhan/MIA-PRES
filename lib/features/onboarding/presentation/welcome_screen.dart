@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mia_pres/screens/home.dart';
-import 'package:mia_pres/widgets/button.dart';
+import 'package:pillpal/screens/home.dart';
+import 'package:pillpal/widgets/button.dart';
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({super.key});

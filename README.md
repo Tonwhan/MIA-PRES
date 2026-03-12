@@ -1,4 +1,4 @@
-# MIA-PRES Medical Intelligence Assistant for Prescription Interpretation and Medication Adherence Support System
+<img width="800" height="376" alt="image" src="https://github.com/user-attachments/assets/67580c88-6b0b-4790-8f52-0b563c06b76f" /># MIA-PRES Medical Intelligence Assistant for Prescription Interpretation and Medication Adherence Support System
 
 ## Project Introduction
 MIA-PRES is an AI-powered medication management application that helps patients of all ages understand their prescriptions, build medication habits, and never miss a dose — from the hospital queue to home.
@@ -49,6 +49,11 @@ The core idea is to make medications understandable, schedules automatic, and ad
 <p>
   <img src="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/dark/gemini-color.png" width="48" height="48" style="border-radius: 10px" />
   <img src="https://media.licdn.com/dms/image/v2/D560BAQGrSd_Vs4ATbA/company-logo_200_200/B56ZqoDjj7JoAI-/0/1763756096084/resend_logo?e=2147483647&v=beta&t=CiyYckUDIthMnig8Rh4uiXKPTWx6xmC13kydj2T6k4g" width="48" height="48" style="border-radius: 10px" />
+</p>
+
+<h3>RTC Platform</h3>
+<p>
+  <img src="https://cdn.prod.website-files.com/660affa848e8af81bdd03909/66ab7f671fb90c022fb7f1dc_Agora%20Logo%20Crisp.webp" width="48" height="48" style="border-radius: 10px" />
 </p>
 
 <h3>Version Control</h3>

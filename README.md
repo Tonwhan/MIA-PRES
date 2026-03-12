@@ -1,5 +1,5 @@
-# MIA-PRES
 ## Medical Intelligence Assistant for Prescription Interpretation and Medication Adherence Support System
+![Logo](assets/app_icon/mia_icon.png)
 
 ## Project Introduction
 MIA-PRES is an AI-powered medication management application 

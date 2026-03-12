@@ -37,4 +37,4 @@
 </p>
 
 ## 💻 Design Architecture
-![Tech_stack](docs/image/MIA-PRES-Architecture.png)
+![Tech_stack](image/MIA-PRES-Architecture.png)

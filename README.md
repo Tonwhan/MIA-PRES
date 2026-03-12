@@ -1,4 +1,3 @@
-[📐 System Design Architecture](assets/docs/architecture.md)
 ## Medical Intelligence Assistant for Prescription Interpretation and Medication Adherence Support System
 <img src="assets/docs/image/Banner.png" width="600">
 

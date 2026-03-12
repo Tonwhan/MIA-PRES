@@ -83,4 +83,4 @@ accurate, reliable information directly from their prescription.
 </p>
 
 ## 💻 Design Architecture
-![Tech_stack](image/MIA-PRES-Architecture.png)
+![Tech_stack](assets/docs/image/MIA-PRES-Architecture.png)

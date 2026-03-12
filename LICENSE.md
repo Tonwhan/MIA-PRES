@@ -1,10 +1,9 @@
-# LICENSE
+LICENSE
 
 Copyright (c) 2026 Chinnachart Waisoka
-
 All rights reserved.
 
-This project and its source code are made publicly visible 
+This project and its source code are made publicly visible
 for evaluation and academic purposes only.
 
 You may NOT:
@@ -12,4 +11,5 @@ You may NOT:
 - Use this code for commercial purposes
 - Submit this code as your own work
 
-This project was created for CEDT Innovation Summit 2026.
+This project was created and submitted as a competition entry
+for CEDT Innovation Summit 2026, HealthTech Track.

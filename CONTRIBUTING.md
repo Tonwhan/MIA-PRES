@@ -1,6 +1,7 @@
 # 👥 Team Members
-| - | Name | Reponsibility |
+
+| - | Name | Responsibility |
 |------|------|---------------|
 | 🧑🏻‍💼 | Mr.Ronnakit Saenprom | Project Advisor |
 | 💻 | Chinnachart Waisoka | Team Leader, Project Manager and Full Stack Software Dev |
-| 👀 | Patteera laolam | Research, Documentation and Presentation |
+| 👀 | Patteera Laolam | Research, Documentation and Presentation |

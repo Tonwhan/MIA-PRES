@@ -33,7 +33,7 @@ flutter:
 
   assets:
     - assets/
-    - assets/fonts
+    - assets/fonts/
     - .env
 
 fonts:

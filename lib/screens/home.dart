@@ -36,6 +36,9 @@ class _HomeState extends State<Home> {
           child: SafeArea(
             child: Column(
               children: [
+                DashboardHeader(),
+                ScanPrescriptionBar(),
+                MedicationTracker(),
               ],
             ),
           ),

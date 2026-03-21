@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:pillpal/config/theme/colors_theme.dart';
 import 'package:pillpal/widgets/header_dashboard.dart';
-import 'package:pillpal/widgets/medication_tracker/midication_tracker.dart';
+import 'package:pillpal/widgets/medication_tracker/medication_tracker.dart';
 import 'package:pillpal/widgets/scan_prescription_bar.dart';
 
 class Home extends StatefulWidget {
@@ -30,7 +30,7 @@ class _HomeState extends State<Home> {
         statusBarColor: Colors.transparent,
       ),
       child: Scaffold(
-        backgroundColor: AppColors.backgorundColor1,
+        backgroundColor: AppColors.backgrondColor1,
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: SafeArea(

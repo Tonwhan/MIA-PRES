@@ -1,18 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:pillpal/config/theme/colors_theme.dart';
-import 'package:pillpal/widgets/header_dashboard.dart';
-import 'package:pillpal/widgets/medication_tracker/medication_tracker.dart';
-import 'package:pillpal/widgets/scan_prescription_bar.dart';
+import 'package:pillpal/widgets/more_page_header.dart';
 
-class Home extends StatefulWidget {
-  const Home({super.key});
+class Morepage extends StatelessWidget {
+  const Morepage({super.key});
 
-  @override
-  State<Home> createState() => _HomeState();
-}
-
-class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     final bool isDarkBackground =
@@ -30,16 +23,13 @@ class _HomeState extends State<Home> {
         statusBarColor: Colors.transparent,
       ),
       child: Scaffold(
-        backgroundColor: AppColors.backgrondColor1,
-        body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0),
-          child: SafeArea(
-            child: Column(
-              children: [
-                DashboardHeader(),
-                ScanPrescriptionBar(),
-                MedicationTracker(),
-              ],
+        backgroundColor: AppColors.backgroundColor,
+        body: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            child: Padding(
+              padding: const EdgeInsets.only(top: 8),
+              child: Header(),
             ),
           ),
         ),

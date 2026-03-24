@@ -80,7 +80,7 @@ class _SignInpageState extends State<SignInpage> {
         statusBarColor: Colors.transparent,
       ),
       child: Scaffold(
-        backgroundColor: AppColors.backgrondColor1,
+        backgroundColor: AppColors.backgroundColor1,
         body: SafeArea(
           child: Padding(
             padding: const EdgeInsets.all(18.0),

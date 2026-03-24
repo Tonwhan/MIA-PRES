@@ -87,7 +87,7 @@ class _SignUpPageState extends State<SignUpPage> {
       appBar: AppBar(
         title: Text('Sign Up'),
         titleTextStyle: AppTextDark.subtitle0,
-        backgroundColor: AppColors.backgrondColor1,
+        backgroundColor: AppColors.backgroundColor1,
         elevation: 0,
         leading: IconButton(
           onPressed: () {
@@ -96,7 +96,7 @@ class _SignUpPageState extends State<SignUpPage> {
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white),
         ),
       ),
-      backgroundColor: AppColors.backgrondColor1,
+      backgroundColor: AppColors.backgroundColor1,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(18.0),

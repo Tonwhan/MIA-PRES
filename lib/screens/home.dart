@@ -30,7 +30,7 @@ class _HomeState extends State<Home> {
         statusBarColor: Colors.transparent,
       ),
       child: Scaffold(
-        backgroundColor: AppColors.backgrondColor1,
+        backgroundColor: AppColors.backgroundColor1,
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: SafeArea(

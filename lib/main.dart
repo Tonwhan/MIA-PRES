@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pillpal/core/services/auth/auth_gate.dart';
-import 'package:pillpal/features/onboarding/presentation/welcome_screen.dart';
+import 'package:pillpal/features/onboarding/presentation/onboarding_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
@@ -42,7 +42,7 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
       //Conditional routing: Show Onbording for new users, otherwise go to main screen
-      home: showOnboarding ? const OnboardingPage() : const AuthGate(),
+      home: showOnboarding ? const OnboardingScreen() : const AuthGate(),
     );
   }
 }

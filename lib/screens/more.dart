@@ -4,7 +4,7 @@ import 'package:pillpal/config/theme/colors_theme.dart';
 import 'package:pillpal/features/settings/presentation/pages/privacy_page.dart';
 import 'package:pillpal/features/settings/presentation/pages/settings_page.dart';
 import 'package:pillpal/features/settings/presentation/pages/terms_page.dart';
-import 'package:pillpal/features/settings/presentation/widgets/contact_center_bar.dart';
+import 'package:pillpal/features/settings/presentation/widgets/contact_center_card.dart';
 import 'package:pillpal/widgets/more_page_header.dart';
 import 'package:pillpal/features/settings/presentation/widgets/setting_item_list.dart';
 
@@ -31,35 +31,32 @@ class Morepage extends StatelessWidget {
         backgroundColor: AppColors.backgroundColor,
         body: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child: Padding(
-              padding: const EdgeInsets.only(top: 8),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Header(),
-                  SizedBox(height: 24),
-                  SettingItemList(
-                    svgIcon: 'assets/vectors/setting.svg',
-                    title: 'Settings',
-                    route: SettingsPage(),
-                  ),
-                  Divider(height: 24),
-                  SettingItemList(
-                    svgIcon: 'assets/vectors/paper.svg',
-                    title: 'Terms & Conditions',
-                    route: Termspage(),
-                  ),
-                  Divider(height: 24),
-                  SettingItemList(
-                    svgIcon: 'assets/vectors/eye.svg',
-                    title: 'Privacy Policy',
-                    route: PrivacyPolicyPage(),
-                  ),
-                  SizedBox(height: 24),
-                  ContactCenterBar(),
-                ],
-              ),
+            padding: const EdgeInsets.only(top: 8),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Header(),
+                SizedBox(height: 24),
+                SettingItemList(
+                  svgIcon: 'assets/vectors/setting.svg',
+                  title: 'Settings',
+                  route: SettingsPage(),
+                ),
+                Divider(height: 24,indent: 16,endIndent: 16,),
+                SettingItemList(
+                  svgIcon: 'assets/vectors/paper.svg',
+                  title: 'Terms & Conditions',
+                  route: Termspage(),
+                ),
+                Divider(height: 24,indent: 16,endIndent: 16,),
+                SettingItemList(
+                  svgIcon: 'assets/vectors/eye.svg',
+                  title: 'Privacy Policy',
+                  route: PrivacyPolicyPage(),
+                ),
+                SizedBox(height: 24),
+                ContactCenterBar(),
+              ],
             ),
           ),
         ),

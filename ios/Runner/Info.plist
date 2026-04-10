@@ -66,5 +66,21 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>This app needs camera access to scan QR codes for the queue.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app needs photos access to get QR code from gallery.</string>
+	<key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>com.googleusercontent.apps.785152966890-28is4dvd2oj1s6e5oq3d6q26vjoqhkhd</string>
+				<string>com.pillpal.app</string>
+            </array>
+        </dict>
+    </array>
 </dict>
 </plist>

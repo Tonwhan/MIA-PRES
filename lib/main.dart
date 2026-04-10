@@ -1,3 +1,4 @@
+import 'package:app_links/app_links.dart';
 import 'package:flutter/material.dart';
 import 'package:pillpal/core/services/auth/auth_gate.dart';
 import 'package:pillpal/features/onboarding/presentation/onboarding_screen.dart';
@@ -11,14 +12,38 @@ Future<void> main() async {
 
   await dotenv.load(fileName: ".env");
 
+  final String supabaseUrl = dotenv.env['SUPABASE_URL']!;
+  final String supabaseAnonKey = dotenv.env['SUPABASE_ANON_KEY']!;
+
   await Supabase.initialize(
-    url: dotenv.env['SUPABASE_URL']!,
-    anonKey: dotenv.env['SUPABASE_ANON_KEY']!,
+    url: supabaseUrl,
+    anonKey: supabaseAnonKey,
+    authOptions: const FlutterAuthClientOptions(
+      authFlowType: AuthFlowType.pkce,
+    ),
   );
+
+  final appLinks = AppLinks();
+  final initialUri = await appLinks.getInitialLink();
+
+  if (initialUri != null) {
+    debugPrint('Initial deep link: $initialUri');
+
+    await Supabase.instance.client.auth.getSessionFromUrl(initialUri);
+  }
+
+  appLinks.uriLinkStream.listen((uri) async {
+    debugPrint('Deep link received: $uri');
+
+    final res = await Supabase.instance.client.auth.getSessionFromUrl(uri);
+
+    debugPrint("SESSION AFTER CALLBACK: ${res.session}");
+  });
 
   final client = Supabase.instance.client;
   debugPrint("Supabase Connected");
-  (client.auth.currentSession);
+
+  debugPrint("Session: ${client.auth.currentSession}");
 
   //Check Onboarding Screen Status
   final prefs = await SharedPreferences.getInstance();
@@ -41,7 +66,7 @@ class MainApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
 
-      //Conditional routing: Show Onbording for new users, otherwise go to main screen
+      //Conditional routing: Show Onboarding for new users, otherwise go to main screen
       home: showOnboarding ? const OnboardingScreen() : const AuthGate(),
     );
   }

@@ -1,9 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:pillpal/config/theme/colors_theme.dart';
 import 'package:pillpal/core/services/auth/auth_service.dart';
 import 'package:pillpal/features/authentication/sign_up/sign_up.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 class SignInpage extends StatefulWidget {
   const SignInpage({super.key});
@@ -50,7 +52,18 @@ class _SignInpageState extends State<SignInpage> {
       await authService.signInWithEmailPassword(email, password);
     }
     //catch any error
-    catch (e) {
+    on AuthException catch (e) {
+      if (mounted) {
+        String errorMessage = e.message;
+        if (e.statusCode == '500') {
+          errorMessage =
+              'Server Error (500): Please check your Supabase Database Logs/Triggers.';
+        }
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text(errorMessage)));
+      }
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(
           context,
@@ -137,6 +150,41 @@ class _SignInpageState extends State<SignInpage> {
                       : const Text('Sign In'),
                 ),
                 SizedBox(height: 8),
+                ElevatedButton.icon(
+                  onPressed: _isloading
+                      ? null
+                      : () async {
+                          final messenger = ScaffoldMessenger.of(context);
+                          setState(() => _isloading = true);
+                          try {
+                            await authService.continueWithGoogle();
+                          } catch (e) {
+                            if (!mounted) return;
+                            messenger.showSnackBar(
+                              SnackBar(
+                                content: Text('Google Sign In Error: $e'),
+                              ),
+                            );
+                          } finally {
+                            if (mounted) {
+                              setState(() => _isloading = false);
+                            }
+                          }
+                        },
+                  icon: SvgPicture.asset('assets/vectors/google.svg'),
+                  label: Text('Continue with google'),
+                  style: ElevatedButton.styleFrom(
+                    elevation: 0,
+                    shadowColor: Colors.transparent,
+                    overlayColor: Colors.grey,
+                    backgroundColor: Colors.white,
+                    foregroundColor: Colors.black,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 8),
                 GestureDetector(
                   onTap: () => Navigator.push(
                     context,
@@ -144,7 +192,7 @@ class _SignInpageState extends State<SignInpage> {
                   ),
                   child: Center(
                     child: Text(
-                      "Dont't have an account?",
+                      "Don't have an account?",
                       style: TextStyle(color: Colors.white),
                     ),
                   ),

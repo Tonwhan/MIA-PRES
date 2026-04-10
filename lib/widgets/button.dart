@@ -1,21 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:pillpal/config/theme/colors_theme.dart';
+import 'package:pillpal/core/animations/swipe_up_page.dart';
 
 enum IconPosition { left, right }
 
 class CustomGradientButton extends StatefulWidget {
   final String label;
   final IconData? icon;
-  final Widget pageRoute;
+  final Widget? pageRoute;
   final bool fullWidth;
   final IconPosition iconPosition;
+  final VoidCallback? onPressed;
 
   const CustomGradientButton({
     super.key,
     required this.label,
     this.icon,
-    required this.pageRoute,
+    this.pageRoute,
     this.fullWidth = false,
     this.iconPosition = IconPosition.left,
+    this.onPressed,
   });
 
   @override
@@ -29,13 +33,16 @@ class _CustomGradientButtonState extends State<CustomGradientButton> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTapDown: (_) => setState(() => _isPressed = true),
-      onTapUp: (_) => setState(() => _isPressed = false),
+      onTapUp: (_) {
+        if (mounted) setState(() => _isPressed = false);
+      },
       onTapCancel: () => setState(() => _isPressed = false),
       onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => widget.pageRoute),
-        );
+        if (widget.onPressed != null) {
+          widget.onPressed!();
+        } else if (widget.pageRoute != null) {
+          Navigator.push(context, SwipeUpPageRoute(page: widget.pageRoute!));
+        }
       },
       child: AnimatedScale(
         scale: _isPressed ? 0.96 : 1,
@@ -46,9 +53,7 @@ class _CustomGradientButtonState extends State<CustomGradientButton> {
           padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 28),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(18),
-            gradient: const LinearGradient(
-              colors: [Color(0XFF232120), Color(0XFF232120)],
-            ),
+            color: AppColors.primary,
           ),
           child: Center(
             child: Row(

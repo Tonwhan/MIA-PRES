@@ -16,17 +16,9 @@ class SwipeUpPageRoute extends PageRouteBuilder {
             end: end,
           ).chain(CurveTween(curve: curve));
 
-          var secondaryTween = Tween(
-            begin: Offset.zero,
-            end: const Offset(0.0, -0.2),
-          ).chain(CurveTween(curve: curve));
-
           return SlideTransition(
-            position: secondaryAnimation.drive(secondaryTween),
-            child: SlideTransition(
-              position: animation.drive(tween),
-              child: child,
-            ),
+            position: animation.drive(tween),
+            child: child,
           );
         },
         transitionDuration: const Duration(milliseconds: 400),

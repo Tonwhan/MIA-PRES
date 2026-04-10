@@ -167,7 +167,7 @@ class _ScanPageState extends State<ScanPage> with TickerProviderStateMixin {
                 ),
                 const SizedBox(height: 16),
                 const Text(
-                  "Point camera at your prescription or medication label",
+                  "Point camera at your prescription or medication QR Code",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 12,
@@ -277,7 +277,7 @@ class _ScanPageState extends State<ScanPage> with TickerProviderStateMixin {
               ),
               const SizedBox(width: 8),
               const Text(
-                "Scan QR Code to get queue",
+                "Scan QR Code or prescription",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 16,

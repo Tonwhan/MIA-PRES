@@ -16,7 +16,8 @@ class AuthGate extends StatelessWidget {
             body: Center(child: CircularProgressIndicator()),
           );
         }
-        final session = snapshot.hasData ? snapshot.data!.session : null;
+        
+        final session = Supabase.instance.client.auth.currentSession;
 
         if (session != null) {
           return const BottomNavbar();

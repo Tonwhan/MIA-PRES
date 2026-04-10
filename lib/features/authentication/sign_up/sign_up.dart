@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:pillpal/config/constants/text_style.dart';
 import 'package:pillpal/config/theme/colors_theme.dart';
 import 'package:pillpal/core/services/auth/auth_service.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});
@@ -65,10 +66,23 @@ class _SignUpPageState extends State<SignUpPage> {
       //if sign up success back to sign in page
       if (mounted) {
         Navigator.pop(context);
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Account created! Please check your email for confirmation.')),
+        );
       }
     }
     //catch any errors
-    catch (e) {
+    on AuthException catch (e) {
+      if (mounted) {
+        String errorMessage = e.message;
+        if (e.statusCode == '500') {
+          errorMessage = 'Server Error (500): Check Supabase Triggers (Auth -> public.profiles).';
+        }
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text(errorMessage)));
+      }
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(
           context,
